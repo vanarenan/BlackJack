@@ -16,26 +16,28 @@ public class WebController {
     BlackJackService service;
 
     @RequestMapping("/game")
-    public String showTable(Model model){
+    public String showTable(Model model) {
         Card card = service.showSixPike();
         model.addAttribute("card", card);
         return "game-table";
     }
+    
     @RequestMapping("/deck")
-    public String showDeck(Model model){
+    public String showDeck(Model model) {
         List<Card> deck = service.getDeck();
         model.addAttribute("deck", deck);
         return "game-table";
     }
+    
     @RequestMapping("/pick")
-    public String pick(Model model){
+    public String pick(Model model) {
         List<Card> delivery = service.getCardList();
         int summ = delivery.stream().mapToInt(card -> card.getValue()).sum();
         String message = "";
-        if (summ == 21){
+        if (summ == 21) {
             message = "You win!";
         }
-        if (summ > 21){
+        if (summ > 21) {
             message = "You lose!";
         }
         model.addAttribute("summ", summ);
@@ -43,22 +45,20 @@ public class WebController {
         model.addAttribute("message", message);
         return "game-table";
     }
+    
     @RequestMapping("/stop")
-    public String stop(Model model){
+    public String stop(Model model) {
         List<Card> delivery = service.getDelivery();
         int summ = delivery.stream().mapToInt(Card::getValue).sum();
         List<Card> forPC = service.getDeliveryForPC();
         return null;
     }
-    /*    public String showSixHeart(Model model){
+    
+    /*    
+    public String showSixHeart(Model model) {
         Card card = service.showSixHeart();
         model.addAttribute("card", card);
-        return "game-table";*/
-
-
-    /*public String pick(Model model){
-        Card card = service.showSixPike();
-        model.addAttribute("card", card);
         return "game-table";
-    }*/
+    }
+    */
 }

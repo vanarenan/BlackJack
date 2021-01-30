@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 @Component
 public class Data {
     private List<Card> deck = new ArrayList<>(

@@ -8,10 +8,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player{" +
-                "name='" + name + '\'' +
-                ", privateSet=" + privateSet +
-                '}';
+        return "Player{name='" + name + '\'' +", privateSet=" + privateSet + '}';
     }
 
     public String getName() {
@@ -22,8 +19,7 @@ public class Player {
         this.name = name;
     }
 
-    public Player() {
-    }
+    public Player() {}
 
     public Player(String name) {
         this.name = name;
