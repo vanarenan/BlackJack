@@ -6,7 +6,7 @@
     </head>
     <body style="background: grey;">
         <div class="wrap" style="margin: 0 auto; width: 300%; height: 90%; background: green">
-            <!--
+            <#--
             ${card.suit}
             ${card.nominal}
             <img src="${card.img}" style="height: 120px;width: 70px" alt="">
