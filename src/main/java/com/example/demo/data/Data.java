@@ -13,50 +13,70 @@ import java.util.List;
 public class Data {
     private List<Card> deck = new ArrayList<>(
             Arrays.asList(
-                    new Card(Suit.PIKE, Nominal.N6, 6, "/img/pike6.png"),
-                    new Card(Suit.HEART, Nominal.N6, 6,"/img/heart6.png"),
-                    new Card(Suit.TILE, Nominal.N6, 6,"/img/tile6.png"),
-                    new Card(Suit.CLOVER, Nominal.N6, 6,"/img/clover6.png"),
+                    new Card(Suit.P, Nominal.N2, 2, "/img/fulldeck/P2.png"),
+                    new Card(Suit.H, Nominal.N2, 2, "/img/fulldeck/H2.png"),
+                    new Card(Suit.T, Nominal.N2, 2, "/img/fulldeck/T2.png"),
+                    new Card(Suit.C, Nominal.N2, 2, "/img/fulldeck/C2.png"),
+                
+                    new Card(Suit.P, Nominal.N3, 3, "/img/fulldeck/P3.png"),
+                    new Card(Suit.H, Nominal.N3, 3, "/img/fulldeck/H3.png"),
+                    new Card(Suit.T, Nominal.N3, 3, "/img/fulldeck/T3.png"),
+                    new Card(Suit.C, Nominal.N3, 3, "/img/fulldeck/C3.png"),
+                    
+                    new Card(Suit.P, Nominal.N4, 4, "/img/fulldeck/P4.png"),
+                    new Card(Suit.H, Nominal.N4, 4, "/img/fulldeck/H4.png"),
+                    new Card(Suit.T, Nominal.N4, 4, "/img/fulldeck/T4.png"),
+                    new Card(Suit.C, Nominal.N4, 4, "/img/fulldeck/C4.png"),
+                    
+                    new Card(Suit.P, Nominal.N5, 5, "/img/fulldeck/P5.png"),
+                    new Card(Suit.H, Nominal.N5, 5, "/img/fulldeck/H5.png"),
+                    new Card(Suit.T, Nominal.N5, 5, "/img/fulldeck/T5.png"),
+                    new Card(Suit.C, Nominal.N5, 5, "/img/fulldeck/C5.png"),
 
-                    new Card(Suit.PIKE, Nominal.N7, 7, "/img/pike7.png"),
-                    new Card(Suit.HEART, Nominal.N7, 7, "/img/heart7.png"),
-                    new Card(Suit.TILE, Nominal.N7, 7, "/img/tile7.png"),
-                    new Card(Suit.CLOVER, Nominal.N7, 7, "/img/clover7.png"),
+                    new Card(Suit.P, Nominal.N6, 6, "/img/fulldeck/P6.png"),
+                    new Card(Suit.H, Nominal.N6, 6, "/img/fulldeck/H6.png"),
+                    new Card(Suit.T, Nominal.N6, 6, "/img/fulldeck/T6.png"),
+                    new Card(Suit.C, Nominal.N6, 6, "/img/fulldeck/C6.png"),
+                    
+                    new Card(Suit.P, Nominal.N7, 7, "/img/fulldeck/P7.png"),
+                    new Card(Suit.H, Nominal.N7, 7, "/img/fulldeck/H7.png"),
+                    new Card(Suit.T, Nominal.N7, 7, "/img/fulldeck/T7.png"),
+                    new Card(Suit.C, Nominal.N7, 7, "/img/fulldeck/C7.png"),
 
-                    new Card(Suit.PIKE, Nominal.N8, 8, "/img/pike8.png"),
-                    new Card(Suit.HEART, Nominal.N8, 8, "/img/heart8.png"),
-                    new Card(Suit.TILE, Nominal.N8, 8, "/img/tile8.png"),
-                    new Card(Suit.CLOVER, Nominal.N8, 8, "/img/clover8.png"),
+                    new Card(Suit.P, Nominal.N8, 8, "/img/fulldeck/P8.png"),
+                    new Card(Suit.H, Nominal.N8, 8, "/img/fulldeck/H8.png"),
+                    new Card(Suit.T, Nominal.N8, 8, "/img/fulldeck/T8.png"),
+                    new Card(Suit.C, Nominal.N8, 8, "/img/fulldeck/C8.png"),
 
-                    new Card(Suit.PIKE, Nominal.N9, 9, "/img/pike9.png"),
-                    new Card(Suit.HEART, Nominal.N9, 9, "/img/heart9.png"),
-                    new Card(Suit.TILE, Nominal.N9, 9, "/img/tile9.png"),
-                    new Card(Suit.CLOVER, Nominal.N9, 9, "/img/clover9.png"),
+                    new Card(Suit.P, Nominal.N9, 9, "/img/fulldeck/P9.png"),
+                    new Card(Suit.H, Nominal.N9, 9, "/img/fulldeck/H9.png"),
+                    new Card(Suit.T, Nominal.N9, 9, "/img/fulldeck/T9.png"),
+                    new Card(Suit.C, Nominal.N9, 9, "/img/fulldeck/C9.png"),
 
-                    new Card(Suit.PIKE, Nominal.N10, 10, "/img/pike10.png"),
-                    new Card(Suit.HEART, Nominal.N10, 10, "/img/heart10.png"),
-                    new Card(Suit.TILE, Nominal.N10, 10, "/img/tile10.png"),
-                    new Card(Suit.CLOVER, Nominal.N10, 10, "/img/clover10.png"),
+                    new Card(Suit.P, Nominal.N10, 10, "/img/fulldeck/P10.png"),
+                    new Card(Suit.H, Nominal.N10, 10, "/img/fulldeck/H10.png"),
+                    new Card(Suit.T, Nominal.N10, 10, "/img/fulldeck/T10.png"),
+                    new Card(Suit.C, Nominal.N10, 10, "/img/fulldeck/C10.png"),
 
-                    new Card(Suit.PIKE, Nominal.JACK, 2, "/img/pike10.png"),
-                    new Card(Suit.HEART, Nominal.JACK, 2, "/img/heart10.png"),
-                    new Card(Suit.TILE, Nominal.JACK, 2, "/img/tile10.png"),
-                    new Card(Suit.CLOVER, Nominal.JACK, 2, "/img/clover10.png"),
+                    new Card(Suit.P, Nominal.J, 10, "/img/fulldeck/PJ.png"),
+                    new Card(Suit.H, Nominal.J, 10, "/img/fulldeck/HJ.png"),
+                    new Card(Suit.T, Nominal.J, 10, "/img/fulldeck/TJ.png"),
+                    new Card(Suit.C, Nominal.J, 10, "/img/fulldeck/CJ.png"),
 
-                    new Card(Suit.PIKE, Nominal.QUEEN, 3, "/img/pikeQueen.png"),
-                    new Card(Suit.HEART, Nominal.QUEEN, 3, "/img/heartQueen.png"),
-                    new Card(Suit.TILE, Nominal.QUEEN, 3, "/img/tileQueen.png"),
-                    new Card(Suit.CLOVER, Nominal.QUEEN, 3, "/img/cloverQueen.png"),
+                    new Card(Suit.P, Nominal.Q, 10, "/img/fulldeck/PQ.png"),
+                    new Card(Suit.H, Nominal.Q, 10, "/img/fulldeck/HQ.png"),
+                    new Card(Suit.T, Nominal.Q, 10, "/img/fulldeck/TQ.png"),
+                    new Card(Suit.C, Nominal.Q, 10, "/img/fulldeck/CQ.png"),
 
-                    new Card(Suit.PIKE, Nominal.KING, 4, "/img/pikeKing.png"),
-                    new Card(Suit.HEART, Nominal.KING, 4, "/img/heartKing.png"),
-                    new Card(Suit.TILE, Nominal.KING, 4, "/img/tileKing.png"),
-                    new Card(Suit.CLOVER, Nominal.KING, 4, "/img/cloverKing.png"),
+                    new Card(Suit.P, Nominal.K, 10, "/img/fulldeck/PK.png"),
+                    new Card(Suit.H, Nominal.K, 10, "/img/fulldeck/HK.png"),
+                    new Card(Suit.T, Nominal.K, 10, "/img/fulldeck/TK.png"),
+                    new Card(Suit.C, Nominal.K, 10, "/img/fulldeck/CK.png"),
 
-                    new Card(Suit.PIKE, Nominal.ACE, 11, "/img/pikeAce.png"),
-                    new Card(Suit.HEART, Nominal.ACE, 11, "/img/heartAce.png"),
-                    new Card(Suit.TILE, Nominal.ACE, 11, "/img/tileAce.png"),
-                    new Card(Suit.CLOVER, Nominal.ACE, 11, "/img/cloverAce.png")
+                    new Card(Suit.P, Nominal.A, 11, "/img/fulldeck/PA.png"),
+                    new Card(Suit.H, Nominal.A, 11, "/img/fulldeck/HA.png"),
+                    new Card(Suit.T, Nominal.A, 11, "/img/fulldeck/TA.png"),
+                    new Card(Suit.C, Nominal.A, 11, "/img/fulldeck/CA.png")
             )
     );
 

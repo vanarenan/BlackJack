@@ -26,7 +26,7 @@ public class WebController {
     public String showDeck(Model model) {
         List<Card> deck = service.getDeck();
         model.addAttribute("deck", deck);
-        return "game-table";
+        return "deck";
     }
     
     @RequestMapping("/pick")
