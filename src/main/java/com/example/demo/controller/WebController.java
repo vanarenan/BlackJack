@@ -17,6 +17,8 @@ public class WebController {
 
     @RequestMapping("/game")
     public String showTable(Model model) {
+        List<Card> cards = service.getCardList();
+        model.addAttribute("cards", cards);
         return "game-table";
     }
     

@@ -46,12 +46,6 @@ public class BlackJackService {
         return cards.stream().mapToInt(Card::getValue).sum();
     }
     
-    public Card showSixPike() {
-        Card sixPike = deck.get(4);
-        // sixPike.setImg("/img/pike6.png");
-        return sixPike;
-    }
-    
     public List<Card> getDeck() {
         return deck;
     }
