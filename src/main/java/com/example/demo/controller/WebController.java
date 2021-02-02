@@ -17,8 +17,6 @@ public class WebController {
 
     @RequestMapping("/game")
     public String showTable(Model model) {
-        Card card = service.showSixPike();
-        model.addAttribute("card", card);
         return "game-table";
     }
     
@@ -53,12 +51,5 @@ public class WebController {
         List<Card> forPC = service.getDeliveryForPC();
         return null;
     }
-    
-    /*    
-    public String showSixHeart(Model model) {
-        Card card = service.showSixHeart();
-        model.addAttribute("card", card);
-        return "game-table";
-    }
-    */
+
 }
