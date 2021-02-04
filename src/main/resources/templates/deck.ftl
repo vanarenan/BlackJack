@@ -41,7 +41,7 @@
 
             <a id="bSideCard" href="/web/cards/pick">
                 <h1 style="position: absolute; margin-left: 25px ; color: aliceblue;border: solid black;background: black">${sizeDeck}</h1>
-                <img src="/img/back.png" alt="lol">
+                <img src="/img/fulldeck/back.png" alt="lol">
             </a>
         </div>
         <div class="cardPlayer">

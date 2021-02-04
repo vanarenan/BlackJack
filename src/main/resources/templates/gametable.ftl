@@ -49,7 +49,7 @@
 <div class="table">
     <div class="backSideCard">
         <a id="bSideCard" href="/web/cards/pick">
-            <img src="/img/img_1.png" alt="lol">
+            <img src="/img/fulldeck/back.png" alt="lol">
         </a>
     </div>
 </div>

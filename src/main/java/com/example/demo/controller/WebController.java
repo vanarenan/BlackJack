@@ -63,7 +63,23 @@ public class WebController {
         model.addAttribute("delivery", delivery);
         return "deck";
     }
+    @RequestMapping("/next")
+    public String next(Model model) {
+        service.playNext();
+        List<Card> delivery = service.getCardList();
+        int sum = delivery.stream().mapToInt(card -> card.getValue()).sum();
+        if (sum >= 20) {
+            return "redirect:/web/cards/stop";
+        }
+        int getDeckSize = service.getDeckSize();
+        int round = service.round;
 
+        model.addAttribute("round", round);
+        model.addAttribute("sizeDeck", getDeckSize);
+        model.addAttribute("sum", sum);
+        model.addAttribute("delivery", delivery);
+        return "deck";
+    }
     @RequestMapping("/stop")
     public String stop(Model model) {
         List<Card> delivery = service.getDelivery();

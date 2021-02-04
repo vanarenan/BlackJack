@@ -162,6 +162,8 @@ public class BlackJackService {
             this.setScore(true);
         } else {
             this.setScore(false);
+        } if (message.equals(draw)){
+            this.setScore(false);
         }
         round ++;
         return message;
