@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="/static/css/style.css" type="text/css">
     <link rel="stylesheet"
           type="text/css" href="<@spring.url '/css/style.css'/>"/>
-    <title>Document</title>
+    <title>Black Jack</title>
 </head>
 <body>
 <div class="container">
@@ -37,7 +37,7 @@
     </a>
     <div class="table">
         <div class="backSideCard">
-            <h1>ROUND <<${round}>></h1>
+            <h1>Round ${round}</h1>
 
             <a id="bSideCard" href="/web/cards/pick">
                 <h1 style="position: absolute; margin-left: 25px ; color: aliceblue;border: solid black;background: black">${sizeDeck}</h1>

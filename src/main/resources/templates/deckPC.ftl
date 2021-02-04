@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/static/css/style.css" type="text/css">
     <link rel="stylesheet"
           type="text/css" href="<@spring.url '/css/style.css'/>"/>
-    <title>Document</title>
+    <title>Black Jack</title>
 </head>
 <head>
     <meta charset="UTF-8">
