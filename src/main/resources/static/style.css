@@ -1,61 +1,31 @@
-body{
+body {
     background-color: crimson;
-    width: 1979px;
-    height: 1080px;
-
 }
-ul{
+ul {
     margin-top:100px;
     display: flex;
     flex-direction: row;
 }
-li{
+li {
     margin-right: 60px;
     width: 70px;
     display: block;
 }
-.container{
-    display: block;
-    width: 1980px;
-    height: 1080px;
+img {
+    height: 130px;
 }
-.allCard{
-    display: flex;
-    justify-content: stretch;
-    flex-direction: column;
-}
-.table{
-    height: 80%;
-    width: 80%;
+.table {
+    width: 60%;
     background: green;
     border: solid 5px brown;
     border-radius: 251px;
-    margin: 10px;
     padding: 64px;
+    margin: 0 auto;
 }
-.message{
+.message {
 
 }
-.backSideCard{
-    height: 141px;
-    width: 98px;
-    margin-left: 50%;
-}
-img{
-    height: 130px;
-}
-.cardPlayer{
-
-}
-.cardPC{
+.allCard {
     display: flex;
-}
-.card{
-
-}
-.sumCard{
-
-}
-.cardColum{
-
+    flex-direction: row;
 }
